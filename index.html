@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieu-Donné Fangnon - Portfolio Académique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e3a8a; /* Deep Blue */
+            --secondary-color: #3b82f6; /* Lighter Blue */
+            --bg-color: #f8fafc;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem 0;
+            letter-spacing: -0.05em;
+        }
+
+        header p.subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin: 0;
+            color: #bfdbfe;
+        }
+
+        .contact-bar {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-bar a {
+            color: var(--white);
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-bar a:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -3rem auto 2rem auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .date-location {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .card h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dieu-Donné Fangnon</h1>
+        <p class="subtitle">Doctorant en Informatique | Machine Learning & Vision par Ordinateur</p>
+        <div class="contact-bar">
+            <a href="mailto:dieu-donne.fangnon@inria.fr">Email: dieu-donne.fangnon@inria.fr</a>
+            <a href="https://github.com/dfangnon" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/dieu-donné-fangnon-4a062a242" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- À propos -->
+        <section>
+            <h2>À propos</h2>
+            <p>
+                Actuellement doctorant en informatique (Machine Learning et Intelligence Artificielle) à l'Université Côte d'Azur (INRIA). Mes recherches se concentrent sur le développement de modèles d'apprentissage profond et de modèles génératifs pour l'analyse visuelle, avec une application pointue en <strong>anatomie du bois et anthracologie</strong>. 
+            </p>
+            <p>
+                Fort d'un bagage solide en mathématiques et en économétrie statistique, je m'intéresse particulièrement à l'IA multimodale et aux modèles de fondation (LLMs, CLIP, VLMs). J'accorde une importance capitale à la rigueur méthodologique dans l'élaboration et l'évaluation de solutions d'IA pour des applications concrètes, en veillant notamment à l'intégrité des pipelines de validation et d'inférence statistique.
+            </p>
+        </section>
+
+        <!-- Recherche et Expertise -->
+        <section>
+            <h2>Recherche & Expertise Technique</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Vision par Ordinateur & Taxonomie</h4>
+                    <p>Développement de méthodes de fusion de caractéristiques profondes pour l'identification multiclasse d'images microscopiques de charbon de bois. Déploiement d'architectures finement décrites (ResNet, EfficientNet, DINO) en explicitant la pertinence de leurs jeux de données de pré-entraînement.</p>
+                </div>
+                <div class="card">
+                    <h4>Rigueur de l'Évaluation Statistique</h4>
+                    <p>Implémentation de protocoles de validation croisée stricts (comme <code>GroupKFold</code>) pour prévenir la fuite de données inter-individus. Conception de matrices de confusion optimisées pour l'analyse visuelle (rotation des libellés à 45°, classes cibles en vert et erreurs en rouge).</p>
+                </div>
+                <div class="card">
+                    <h4>Traitement Avancé des Données</h4>
+                    <p>Adaptation de scripts complexes pour le traitement de fichiers hétérogènes. Maîtrise des techniques de réduction de dimensionnalité, incluant l'application de l'Analyse en Composantes Principales (ACP) sur des caractéristiques probabilistes, en évitant toute standardisation déformante.</p>
+                </div>
+                <div class="card">
+                    <h4>Modélisation Multimodale</h4>
+                    <p>Exploration des modèles d'IA multimodaux et application des LLM au domaine médical (projet Antibiogo, traduction de données de santé dans des langues locales comme le Wolof).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expérience Professionnelle -->
+        <section>
+            <h2>Expériences en Recherche & Industrie</h2>
+            
+            <h3>Doctorant Chercheur (Machine Learning & Vision par Ordinateur)</h3>
+            <div class="date-location">Fév 2025 - Jan 2028 | Université Côte d’Azur (UCA-EDSTIC) - INRIA, France</div>
+            <ul>
+                <li>Recherche doctorale axée sur les modèles de vision profonde et les modèles génératifs.</li>
+            </ul>
+
+            <h3>Assistant d'Enseignement (TA)</h3>
+            <div class="date-location">Juin 2025 - Juil 2025 | Deep Learning Summer School, Sophia Antipolis, France</div>
+            <ul>
+                <li>Accompagnement pédagogique sur les fondamentaux et les applications de l'apprentissage profond.</li>
+            </ul>
+
+            <h3>Stagiaire de Recherche</h3>
+            <div class="date-location">Juin 2024 - Sept 2024 | EPFL (Swiss Federal Institute of Technology), Suisse</div>
+            <ul>
+                <li>Projet de recherche sur le projet "Antibiogo" de Médecins Sans Frontières, utilisant la vision par ordinateur et les LLMs.</li>
+            </ul>
+        </section>
+
+        <!-- Formation -->
+        <section>
+            <h2>Formation Académique</h2>
+            
+            <h3>MSc in Machine Learning and Artificial Intelligence (Distinction)</h3>
+            <div class="date-location">Jan 2023 - Juin 2024 | African Masters of Machine Intelligence (AMMI), Sénégal</div>
+            
+            <h3>MSc in Sciences Mathematics - Big Data (Distinction)</h3>
+            <div class="date-location">Oct 2021 - Juil 2022 | African Institute for Mathematical Sciences (AIMS), Sénégal</div>
+            
+            <h3>MSc in Mathematics of Decision: Statistics and Econometrics</h3>
+            <div class="date-location">Oct 2019 - Sept 2021 | Higher Institute of Decision Mathematics (ISMADE), Bénin</div>
+        </section>
+
+        <!-- Conférences et Présentations -->
+        <section>
+            <h2>Présentations & Travaux (Sélection)</h2>
+            <ul>
+                <li><strong>Advanced Wood Species Identification</strong> Based on Multiple Anatomical Sections Using Deep Feature Transfer and Fusion.</li>
+                <li><strong>Deep Feature Fusion</strong> for Fair Wood Charcoal Species Classification.</li>
+                <li><strong>From Deep Learning for Computer Vision</strong> to Large Vision Models.</li>
+                <li><strong>Sliced Wasserstein Discrepancy</strong> for Unsupervised Domain Adaptation.</li>
+            </ul>
+        </section>
+
+        <!-- Compétences Techniques -->
+        <section>
+            <h2>Compétences Techniques</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python (PyTorch, TensorFlow, Pandas, Scikit-learn)</span>
+                <span class="skill-tag">R & SQL</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">Deep Learning / LLMs</span>
+                <span class="skill-tag">Modélisation Statistique</span>
+                <span class="skill-tag">Linux / Git</span>
+                <span class="skill-tag">LaTeX</span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dieu-Donné Fangnon. Créé avec passion pour la recherche scientifique.</p>
+    </footer>
+
+</body>
+</html>
